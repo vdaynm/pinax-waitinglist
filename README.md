@@ -49,10 +49,11 @@ and Bootstrap templates, see the Pinax ``waitinglist`` starter project.
 
 #### Supported Django and Python versions
 
-Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
---------------- | --- | --- | --- | ---
-1.11 |  *  |  *  |  *  |  *  
-2.0  |     |  *  |  *  |  *
+Django / Python | 3.6 | 3.7 | 3.8
+--------------- | --- | --- | ---
+1.11 |  *  |  *  |
+2.2  |  *  |  *  |  *
+3.0  |  *  |  *  |  *
 
 
 ## Documentation
@@ -357,6 +358,8 @@ Provides argument `entry` (`WaitingListEntry` instance).
 
 ## Change Log
 
+### 3.0.0
+
 ### 2.0.3
 
 * Fix render_to_string `context_instances` kwarg 
@@ -432,4 +435,4 @@ and check out our [Pinax Project blog](http://blog.pinaxproject.com).
 
 ## License
 
-Copyright (c) 2012-2019 James Tauber and contributors under the [MIT license](https://opensource.org/licenses/MIT).
+Copyright (c) 2012-present James Tauber and contributors under the [MIT license](https://opensource.org/licenses/MIT).
