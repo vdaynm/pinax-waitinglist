@@ -37,7 +37,7 @@ class Survey(models.Model):
     def save(self, *args, **kwargs):
         if self.active:
             Survey.objects.filter(active=True).update(active=False)
-        return super(Survey, self).save(*args, **kwargs)
+        return super().save(*args, **kwargs)
 
 
 class SurveyInstance(models.Model):
@@ -51,7 +51,7 @@ class SurveyInstance(models.Model):
 
     def save(self, *args, **kwargs):
         self.code = self.generate_hash()
-        return super(SurveyInstance, self).save(*args, **kwargs)
+        return super().save(*args, **kwargs)
 
 
 class SurveyQuestion(models.Model):
@@ -115,7 +115,7 @@ class SurveyQuestion(models.Model):
                 Max("ordinal")
             )["ordinal__max"] or 0
             self.ordinal = max_ordinal + 1
-        return super(SurveyQuestion, self).save(*args, **kwargs)
+        return super().save(*args, **kwargs)
 
 
 class SurveyQuestionChoice(models.Model):
