@@ -63,7 +63,6 @@ and Bootstrap templates, see the Pinax ``waitinglist`` starter project.
 
 Django / Python | 3.6 | 3.7 | 3.8
 --------------- | --- | --- | ---
-1.11 |  *  |  *  |
 2.2  |  *  |  *  |  *
 3.0  |  *  |  *  |  *
 
